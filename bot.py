@@ -28,9 +28,14 @@ userinfostate = driver.find_elements_by_xpath("//*[contains(text(), 'Not Now')]"
 for btn in userinfostate:
     btn.click()
 time.sleep(2)
-noteoff = driver.find_elements_by_xpath("//*[contains(text(), 'Not Now')]")
-for btn in noteoff:
-    btn.click()
+try:
+    noteoff = driver.find_elements_by_xpath("//*[contains(text(), 'Not Now')]")
+    for btn in noteoff:
+        btn.click()
+        print("Exeption used!")
+except:
+    print("Exeption not used.")
+print("UPDATE VERSION: 12/13/2020")
 print("Logged in!")
 input = input("Press enter to start loop.")
 while True:

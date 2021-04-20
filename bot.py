@@ -11,7 +11,7 @@ from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 tryn = 0
 
-driver = webdriver.Chrome(executable_path='C:/Users/thech/Downloads/chromedriver_win32/chromedriver.exe')
+driver = webdriver.Chrome(executable_path='C:/Users/"usernamehere"/Downloads/chromedriver_win32/chromedriver.exe')
 driver.get('https://www.instagram.com/direct/inbox/')
 print(driver.title)
 print(driver.current_url)
